@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.navbar{
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar li{
+    list-style: none;
+    padding: 1rem;
+}
+
+.navbar li a{
+    padding: 2px 2px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+    color: lightblue;
+}
+
+.logo {
+    height: 45px;
+    width: 90px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/*banner*/
+.banner {
+    background-image: url("main-img/banner.jpg");
+    background-size: 150%;
+    background-position: center;
+    color: white;
+    height: 800px;
+}
+
+.banner_contents {
+    margin-left: 30px;
+    padding-top: 300px;
+    height: 190px;
+}
+
+.banner_title{
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 5rem;
+    padding-bottom: 0.3rem;
+}
+
+.banner_btn {
+    display: flex; /* 요소를 가로로 나란히 배치합니다. */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+    padding: 10px 20px; 
+    color: white; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+}
+
+.banner_btn button{
+    width: 100px;
+    height: 50px;
+    color: black;
+    border-radius: 2px;
+    border: 1px solid transparent;
+}
+
+.banner_btn button:hover{
+    filter: brightness(70%); /* 호버 상태에서 이미지 어둡게 만듦 */
+    cursor: pointer;
+}
+
+.banner_btn img {
+    width: 20px; /* 이미지의 너비 */
+    height: auto; /* 이미지의 높이 자동 조정 */
+    margin-right: 10px; /* 이미지와 텍스트 사이 간격 설정 */
+}
+
+.banner_description{
+    line-height: 1.5;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    clear: left;
+}
+
+.banner_description_2 li{
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+    color:lightgray;
+}
+
+.banner_description_2 li::after{
+    content:'|';
+    padding-left: 10px;
+}
+.banner_description_2 li:last-of-type::after{
+    content: '';
+}
+.banner_description_2{
+    float:left;
+}
+
+.banner_description_3 li{
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+    color:lightgray;
+}
+
+.Horizon_line {
+    margin-top: 150px;
+}
+
+.banner_description_4 {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: lightgray; /* 텍스트 색상을 파란색으로 변경 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+}
